@@ -6,13 +6,13 @@ import { employees } from "../utils/db.js";
 // Check the browser preview and conduct some tests to ensure it works correctly.
 
 function findByLastName(employees, lastName) {
-  return employees.find((employee) => employee.startsWith("S"));
+  return employees.find((employee) => employee.lastName.startsWith("S"));
 
   // Exercise 2:
   // The same as above, but now you are searching by the 'id'.
 }
 function findById(employees, id) {
-  return null;
+  return employees.find(());
 }
 
 // Exercise 3:
