@@ -20,12 +20,12 @@ export default function App() {
     {
       id: 1380,
       name: "🍈 Melon",
-      color: "green",
+      color: "lightgreen",
     },
     {
       id: 1381,
       name: "🍇 Grape",
-      color: "darkblue",
+      color: "purple",
     },
   ];
 
