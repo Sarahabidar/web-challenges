@@ -4,6 +4,7 @@ import "./styles.css";
 export default function App() {
   const [holiday, setHoliday] = useState();
   const [date, setDate] = useState("");
+
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -12,6 +13,11 @@ export default function App() {
 
     setHoliday(data.holiday);
     setDate(data.date);
+
+    // Reset form fields
+    event.target.reset();
+    // Focus on the holiday input field
+    document.getElementById("holiday").focus();
   }
 
   return (
