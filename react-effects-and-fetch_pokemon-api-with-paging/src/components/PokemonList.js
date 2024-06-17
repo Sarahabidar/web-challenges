@@ -20,9 +20,9 @@ export default function PokemonList() {
     }
 
     loadPokemon();
-  }, [page]); //nclude page in the dependency array
+  }, [page]); //include page in the dependency array
   const nextPage = () => {
-    setPage(page + 20); // Update offset to fetch the next page
+    setPage(page + 20); // Update page to fetch the next page
   };
   const previousPage = () => {
     setPage(page - 20);
