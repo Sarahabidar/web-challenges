@@ -7,7 +7,7 @@ async function fetcher(url) {
   return data;
 }
 export default function Product() {
-  const { data: product } = useSWR("/api/products", fetcher);
+  const { data } = useSWR("/api/products", fetcher);
   if (!data) {
     return "Loading";
   }
