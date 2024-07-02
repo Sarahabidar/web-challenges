@@ -3,6 +3,7 @@ import ColoredNumber from "./ColoredNumber";
 
 export default function Counter() {
   const [count, setCount] = useState(0);
+  //useState für change the state
   return (
     <div className="counter">
       <h1>Colored Number</h1>
